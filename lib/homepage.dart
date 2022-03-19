@@ -15,10 +15,18 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  final List<Widget> _children = [
+    const Center(child: Text('HOME')),
+    const Center(child: Text('SEARCH')),
+    const Center(child: Text('REELS')),
+    const Center(child: Text('SHOP')),
+    const Center(child: Text('ACCOUNT'))
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: const Center(child: Text('body here')),
+        body: _children[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,
           onTap: _navigateBottomNavBar,
