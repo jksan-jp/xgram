@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xgram/util/bubble_stories.dart';
 
 class UserHome extends StatelessWidget {
   const UserHome({Key? key}) : super(key: key);
@@ -30,15 +31,12 @@ class UserHome extends StatelessWidget {
       body: Column(children: [
         // STORIES
         Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                      shape: BoxShape.circle, color: Colors.grey[400])),
-            ),
+          children: const [
+            BubbleStories(),
+            BubbleStories(),
+            BubbleStories(),
+            BubbleStories(),
+            BubbleStories()
           ],
         )
         // POSTS
