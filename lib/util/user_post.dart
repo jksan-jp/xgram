@@ -54,6 +54,23 @@ class UserPost extends StatelessWidget {
               const Icon(Icons.bookmark)
             ],
           ),
+        ),
+
+        // like by...
+        Padding(
+          padding: const EdgeInsets.only(left: 16.0),
+          child: Row(children: const [
+            Text('Liked by '),
+            Text(
+              'zuck',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            Text(' and '),
+            Text(
+              'others',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            )
+          ]),
         )
       ],
     );
