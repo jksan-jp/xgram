@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:xgram/util/bubble_stories.dart';
+import 'package:xgram/util/user_post.dart';
 
 class UserHome extends StatelessWidget {
   UserHome({Key? key}) : super(key: key);
@@ -49,6 +50,7 @@ class UserHome extends StatelessWidget {
                   return BubbleStories(text: people[index]);
                 })),
         // POSTS
+        const UserPost(),
       ]),
     );
   }
