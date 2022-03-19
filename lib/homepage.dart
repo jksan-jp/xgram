@@ -8,7 +8,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final int _selectedIndex = 2;
+  int _selectedIndex = 0;
+  void _navigateBottomNavBar(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +21,7 @@ class _HomePageState extends State<HomePage> {
         body: const Center(child: Text('body here')),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,
+          onTap: _navigateBottomNavBar,
           type: BottomNavigationBarType.fixed,
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
