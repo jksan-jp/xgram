@@ -30,24 +30,34 @@ class UserHome extends StatelessWidget {
       ),
       body: Column(children: [
         // STORIES
-        Row(
-          children: const [
-            BubbleStories(
-              text: 'a',
-            ),
-            BubbleStories(
-              text: 'b',
-            ),
-            BubbleStories(
-              text: 'c',
-            ),
-            BubbleStories(
-              text: 'd',
-            ),
-            BubbleStories(
-              text: 'e',
-            )
-          ],
+        SizedBox(
+          height: 130,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: const [
+              BubbleStories(
+                text: 'kotathefriend',
+              ),
+              BubbleStories(
+                text: 'obana',
+              ),
+              BubbleStories(
+                text: 'mitch',
+              ),
+              BubbleStories(
+                text: 'tomas egison',
+              ),
+              BubbleStories(
+                text: 'e',
+              ),
+              BubbleStories(
+                text: 'f',
+              ),
+              BubbleStories(
+                text: 'g',
+              )
+            ],
+          ),
         )
         // POSTS
       ]),
