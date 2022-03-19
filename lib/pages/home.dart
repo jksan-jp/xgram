@@ -50,7 +50,7 @@ class UserHome extends StatelessWidget {
                   return BubbleStories(text: people[index]);
                 })),
         // POSTS
-        const UserPost(),
+        const UserPost(name: 'elon musk'),
       ]),
     );
   }

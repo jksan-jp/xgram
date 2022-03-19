@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 
-class UserPost extends StatefulWidget {
-  const UserPost({Key? key}) : super(key: key);
+class UserPost extends StatelessWidget {
+  final String name;
+  const UserPost({Key? key, required this.name}) : super(key: key);
 
-  @override
-  State<UserPost> createState() => _UserPostState();
-}
-
-class _UserPostState extends State<UserPost> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -23,7 +19,7 @@ class _UserPostState extends State<UserPost> {
                     color: Colors.grey[300], shape: BoxShape.circle),
               ),
               const SizedBox(width: 10),
-              const Text('name')
+              Text(name)
             ],
           ),
         ),
