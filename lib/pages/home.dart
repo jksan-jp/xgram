@@ -27,7 +27,22 @@ class UserHome extends StatelessWidget {
           )
         ]),
       ),
-      body: const Center(child: Text('HOME')),
+      body: Column(children: [
+        // STORIES
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                  width: 60,
+                  height: 60,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle, color: Colors.grey[400])),
+            ),
+          ],
+        )
+        // POSTS
+      ]),
     );
   }
 }
