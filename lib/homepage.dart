@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:xgram/pages/account.dart';
+import 'package:xgram/pages/home.dart';
+import 'package:xgram/pages/reels.dart';
+import 'package:xgram/pages/search.dart';
+import 'package:xgram/pages/shop.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,11 +21,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<Widget> _children = [
-    const Center(child: Text('HOME')),
-    const Center(child: Text('SEARCH')),
-    const Center(child: Text('REELS')),
-    const Center(child: Text('SHOP')),
-    const Center(child: Text('ACCOUNT'))
+    const UserHome(),
+    const UserSearch(),
+    const UserReels(),
+    const UserShop(),
+    const UserAccount()
   ];
 
   @override
