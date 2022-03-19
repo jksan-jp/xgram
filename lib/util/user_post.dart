@@ -71,7 +71,18 @@ class UserPost extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold),
             )
           ]),
-        )
+        ),
+
+        // caption
+        Padding(
+            padding: const EdgeInsets.only(left: 16.0, top: 8),
+            child: Row(children: const [
+              Text(
+                'zuckaaaaaaaaaaaaaaaaaaaaaaaaa',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Text(' i turn the dirt they throwing into riches til im filthy')
+            ]))
       ],
     );
   }
