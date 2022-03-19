@@ -11,15 +11,24 @@ class UserPost extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(16.0),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                    color: Colors.grey[300], shape: BoxShape.circle),
+              Row(
+                children: [
+                  Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                        color: Colors.grey[300], shape: BoxShape.circle),
+                  ),
+                  const SizedBox(width: 10),
+                  Text(
+                    name,
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  )
+                ],
               ),
-              const SizedBox(width: 10),
-              Text(name)
+              const Icon(Icons.menu)
             ],
           ),
         ),
