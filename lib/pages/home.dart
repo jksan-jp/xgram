@@ -32,11 +32,21 @@ class UserHome extends StatelessWidget {
         // STORIES
         Row(
           children: const [
-            BubbleStories(),
-            BubbleStories(),
-            BubbleStories(),
-            BubbleStories(),
-            BubbleStories()
+            BubbleStories(
+              text: 'a',
+            ),
+            BubbleStories(
+              text: 'b',
+            ),
+            BubbleStories(
+              text: 'c',
+            ),
+            BubbleStories(
+              text: 'd',
+            ),
+            BubbleStories(
+              text: 'e',
+            )
           ],
         )
         // POSTS
