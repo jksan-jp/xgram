@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<Widget> _children = [
-    const UserHome(),
+    UserHome(),
     const UserSearch(),
     const UserReels(),
     const UserShop(),

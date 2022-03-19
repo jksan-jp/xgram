@@ -2,7 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:xgram/util/bubble_stories.dart';
 
 class UserHome extends StatelessWidget {
-  const UserHome({Key? key}) : super(key: key);
+  UserHome({Key? key}) : super(key: key);
+
+  final List people = [
+    'kotathefriend',
+    'obama',
+    'mitch',
+    'tomas egison',
+    'eeee',
+    'ffff',
+    'gggg'
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -31,34 +41,13 @@ class UserHome extends StatelessWidget {
       body: Column(children: [
         // STORIES
         SizedBox(
-          height: 130,
-          child: ListView(
-            scrollDirection: Axis.horizontal,
-            children: const [
-              BubbleStories(
-                text: 'kotathefriend',
-              ),
-              BubbleStories(
-                text: 'obana',
-              ),
-              BubbleStories(
-                text: 'mitch',
-              ),
-              BubbleStories(
-                text: 'tomas egison',
-              ),
-              BubbleStories(
-                text: 'e',
-              ),
-              BubbleStories(
-                text: 'f',
-              ),
-              BubbleStories(
-                text: 'g',
-              )
-            ],
-          ),
-        )
+            height: 130,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: people.length,
+                itemBuilder: (context, index) {
+                  return BubbleStories(text: people[index]);
+                })),
         // POSTS
       ]),
     );
