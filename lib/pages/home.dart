@@ -5,8 +5,16 @@ class UserHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('HOME')),
+    return Scaffold(
+      appBar: AppBar(
+        title: Row(children: const [
+          Text('Xgram'),
+          Icon(Icons.add),
+          Icon(Icons.favorite),
+          Icon(Icons.share),
+        ]),
+      ),
+      body: const Center(child: Text('HOME')),
     );
   }
 }
