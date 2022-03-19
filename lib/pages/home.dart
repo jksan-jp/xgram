@@ -18,7 +18,10 @@ class UserHome extends StatelessWidget {
           Row(
             children: const [
               Icon(Icons.add),
-              Icon(Icons.favorite),
+              Padding(
+                padding: EdgeInsets.all(24.0),
+                child: Icon(Icons.favorite),
+              ),
               Icon(Icons.share),
             ],
           )
