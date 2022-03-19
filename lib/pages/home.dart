@@ -9,11 +9,19 @@ class UserHome extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Row(children: const [
-          Text('Xgram'),
-          Icon(Icons.add),
-          Icon(Icons.favorite),
-          Icon(Icons.share),
+        title:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          const Text(
+            'Xgram',
+            style: TextStyle(color: Colors.black),
+          ),
+          Row(
+            children: const [
+              Icon(Icons.add),
+              Icon(Icons.favorite),
+              Icon(Icons.share),
+            ],
+          )
         ]),
       ),
       body: const Center(child: Text('HOME')),
