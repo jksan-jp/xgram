@@ -36,6 +36,15 @@ class UserPost extends StatelessWidget {
           height: 400,
           color: Colors.grey[300],
         ),
+        // below the post -> buttons and commments
+        Row(
+          children: const [
+            Icon(Icons.favorite),
+            Icon(Icons.chat_bubble_outline),
+            Icon(Icons.share),
+            Icon(Icons.bookmark)
+          ],
+        )
       ],
     );
   }
