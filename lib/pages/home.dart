@@ -7,6 +7,8 @@ class UserHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         title: Row(children: const [
           Text('Xgram'),
           Icon(Icons.add),
